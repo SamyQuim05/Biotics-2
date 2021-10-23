@@ -1,6 +1,6 @@
-import { RolSqlModule } from "src/infrastructure/driven-adapters/rol/rol-sql.module";
-import { Module } from "@nestjs/common";
-import { RolService } from "./rol.service";
+import { RolSqlModule } from 'src/infrastructure/driven-adapters/rol/rol-sql.module';
+import { Module } from '@nestjs/common';
+import { RolService } from './rol.service';
 
 @Module({
   imports: [RolSqlModule],
