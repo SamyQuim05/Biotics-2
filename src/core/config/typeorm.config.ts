@@ -8,14 +8,14 @@ class TypeOrmConfig {
   static getOrmConfig(configService: ConfigService): TypeOrmModuleOptions {
     return {
       type: "postgres",
-      host: configService.get("DB_HOST"),
-      port: configService.get("DB_PORT"),
-      username: configService.get("DB_USERNAME"),
-      password: configService.get("DB_PASSWORD"),
-      database: configService.get("DB_NAME"),
+      host: "localhost",
+      port: 5432,
+      username: "postgres",
+      password: "secret",
+      database: "postgres",
       autoLoadEntities: true,
       synchronize: true,
-      logging: false,
+      logging: true,
     };
   }
 }
